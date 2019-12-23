@@ -1,17 +1,55 @@
+
 import java.util.Scanner;
 
-class Maths{
+class apples{
 public static void main(String[] args) {
-    Scanner Maths = new Scanner (System.in);
-    double fnum;
-    double snum;
-    double answer;
-    System.out.println("Enter first num:  ");
-    fnum = Maths.nextDouble();
+    Scanner  apples=new Scanner(System.in);
+    int fnum;
+    char sign;
+    int snum;
+    int answer;
+    
+System.out.println("Enter first num:  ");
+  fnum=apples.nextInt();
+
+   
+
+
     System.out.println("Enter second num:  ");
-    snum = Maths.nextDouble();
-    answer = fnum + snum;
-    System.out.println(answer);
+    snum=apples.nextInt();
+
+    System.out.print("Enter the mathematical operator to be used: ");
+    sign=apples.next().charAt(0);
+
+    if (sign == '+') {
+      answer = fnum + snum;
+      System.out.println(fnum +" "+sign +" "+snum +"= "+" "+ answer );
+
+    }
+
+    else if(sign == '-') {
+        answer = fnum - snum;
+      System.out.println(fnum +" "+sign +" "+snum +"= "+" "+ answer );
+        
+    }
+
+    else if(sign == '/') {
+        answer = fnum / snum;
+      System.out.println(fnum +" "+sign +" "+snum +"= "+" "+ answer );
+        
+    }
+
+    else if(sign == '*' ) {
+        answer = fnum * snum;
+        System.out.println(fnum +" "+sign +" "+snum +"= "+" "+ answer );
+
+    }
+    
+    else
+			
+        System.out.println("Your Input is not correct,please check it for any error(s).");
+        
+    
 
 
 
@@ -27,7 +65,17 @@ public static void main(String[] args) {
 
 }
     
+
+
+
+
+
+
+
+
+
 }
+    
 
 
 
