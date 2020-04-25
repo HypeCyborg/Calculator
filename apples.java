@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class apples{
@@ -9,6 +8,8 @@ public static void main(String[] args) {
     int snum;
     int answer;
     
+     
+  
 System.out.println("Enter first num:  ");
   fnum=apples.nextInt();
 
@@ -17,7 +18,10 @@ System.out.println("Enter first num:  ");
 
     System.out.println("Enter second num:  ");
     snum=apples.nextInt();
+   
 
+      
+    for ( ; ; ) {
     System.out.print("Enter the mathematical operator to be used: ");
     sign=apples.next().charAt(0);
 
@@ -43,6 +47,9 @@ System.out.println("Enter first num:  ");
         answer = fnum * snum;
         System.out.println(fnum +" "+sign +" "+snum +"= "+" "+ answer );
 
+        if (sign == '=') {
+          break ;
+        }
     }
     
     else
@@ -75,8 +82,4 @@ System.out.println("Enter first num:  ");
 
 
 }
-    
-
-
-
-
+}
